@@ -49,6 +49,13 @@ app.post('/login', function (req, res) {
   }
 })
 
+app.get('/match', function (req, res) {
+  res.json({
+    success: true,
+    message: "You arrive at a new endpoint!"
+  })
+})
+
 app.listen(8000, function () {
   console.log("server is running");
 })
